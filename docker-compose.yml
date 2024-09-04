@@ -9,6 +9,7 @@ services:
       - pocketbase-volume:/app/data
     ports:
       - "8090:8090"
+    restart: unless-stopped
 
 volumes:
   pocketbase-volume:
